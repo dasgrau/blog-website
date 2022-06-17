@@ -56,7 +56,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
-  background-color: #000; }
+  background-color: #aaa; }
   #footer .linkler {
     display: flex;
     flex-direction: column;
