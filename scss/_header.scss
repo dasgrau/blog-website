@@ -1,0 +1,54 @@
+#header__main {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px 1px #000;
+    text-align: center;
+    // Search İnput
+    .search-input {
+        display: flex;
+        justify-content: center;
+        input[type=text] {
+            padding: .5rem 1rem;
+            width: 70%;
+        }
+        // Search İcon
+        i[class*=-search] {
+            color: #000;
+            border: 1px solid black;
+            border-left: none;
+            padding: .5rem;
+            margin-left: 0;
+            &:hover {
+                color: #333;
+            }
+        }
+    }
+    // sosyal medya box
+    .medya-icon-box {
+        text-align: right;
+        padding-right: 1rem;
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+        // a
+        a {
+            text-decoration: none;
+            i:hover {
+                transform: scale(1.1);
+            }
+        }
+        a[class=instagram] {
+            color: red;
+        }
+        a[class=youtube] {
+            color: red;
+        }
+        a[class=twitter] {
+            color: rgb(5, 179, 179);
+        }
+        a[class=github] {
+            color: #333;
+        }
+    }
+}

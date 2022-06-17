@@ -1,0 +1,25 @@
+{
+    "name": "blog-v1",
+    "version": "1.0.1",
+    "description": "Blog Web",
+    "main": "index.js",
+    "scripts": {
+        "scss": "node-sass -w scss -o public/css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dasgrau/blog-website.git"
+    },
+    "keywords": [
+        "Blog"
+    ],
+    "author": "Murat Akyol & Ömer Çakar",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dasgrau/blog-website/issues"
+    },
+    "homepage": "https://github.com/dasgrau/blog-website#readme",
+    "dependencies": {
+        "node-sass": "^7.0.1"
+    }
+}

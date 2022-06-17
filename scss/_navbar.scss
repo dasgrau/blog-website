@@ -1,0 +1,22 @@
+#navbar_main {
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0px 10px 10px 1px #000;
+    z-index: 9999;
+    #nav-links {
+        display: flex;
+        gap: 2rem;
+        .nav-link {
+            color: #3d191c;
+            font-size: .9rem;
+            text-decoration: none;
+            box-shadow: 0 0 3px 1px #000;
+            padding: .3rem 1rem;
+            &:hover {
+                color: #fff;
+                background-color: #3d191c;
+                transition: all 1s;
+            }
+        }
+    }
+}
