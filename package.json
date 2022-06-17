@@ -20,6 +20,8 @@
     },
     "homepage": "https://github.com/dasgrau/blog-website#readme",
     "dependencies": {
-        "node-sass": "^7.0.1"
+        "node": "^17.7.2",
+        "node-sass": "^7.0.1",
+        "sass": "^1.52.3"
     }
 }
