@@ -64,7 +64,6 @@
     justify-content: center; }
     #footer .linkler .div-body {
       display: flex;
-      flex-direction: column;
       gap: 10px; }
       #footer .linkler .div-body .footer_link {
         padding: .3rem;
