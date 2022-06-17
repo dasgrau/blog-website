@@ -50,13 +50,49 @@
       font-size: .9rem;
       text-decoration: none;
       box-shadow: 0 0 3px 1px #000;
-      padding: .3rem 1rem; }
-      #navbar_main #nav-links .nav-link:hover {
-        color: #fff;
-        background-color: #3d191c;
-        transition: all 1s; }
+      padding: .3rem 2rem; }
+
+#footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+  background-color: #000; }
+  #footer .linkler {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    #footer .linkler .div-body {
+      display: flex;
+      flex-direction: column;
+      gap: 10px; }
+      #footer .linkler .div-body .footer_link {
+        padding: .3rem;
+        border-radius: 3px;
+        position: relative;
+        transition: all 1s;
+        z-index: 3;
+        display: flex;
+        gap: 10px;
+        color: #fff; }
+        #footer .linkler .div-body .footer_link::before {
+          content: "";
+          background-color: #fafafa;
+          position: absolute;
+          width: 0%;
+          padding: 1rem;
+          bottom: 0;
+          left: 0%;
+          z-index: -1;
+          transition: all .3s;
+          padding: .3px; }
+        #footer .linkler .div-body .footer_link:hover::before {
+          width: 100%; }
 
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
