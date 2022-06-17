@@ -56,7 +56,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
-  background-color: #aaa; }
+  background-color: #aaa;
+  width: 100%; }
   #footer .linkler {
     display: flex;
     flex-direction: column;
@@ -105,33 +106,82 @@ main {
 .leftcolumn {
   float: left;
   width: 75%; }
+  .leftcolumn .post-col3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    height: 500px;
+    grid-template-rows: 1fr 1fr; }
+    .leftcolumn .post-col3 .post {
+      background-color: white;
+      color: #fff;
+      padding: 20px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 3; }
+      .leftcolumn .post-col3 .post .post_title {
+        text-align: center;
+        width: 100%;
+        padding: .5rem;
+        font-size: 1rem; }
+      .leftcolumn .post-col3 .post .post_img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; }
+      .leftcolumn .post-col3 .post .post_description {
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        background: rgba(94, 94, 94, 0.5);
+        width: 100%;
+        color: #fff;
+        text-transform: capitalize; }
+    .leftcolumn .post-col3 .post_row_2 {
+      height: 100%;
+      width: 100%;
+      display: flex; }
 
 .rightcolumn {
   float: left;
   width: 25%;
   padding-left: 20px; }
+  .rightcolumn .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; }
+    .rightcolumn .card .card_title {
+      text-align: center;
+      width: 100%;
+      padding: .5rem;
+      background-color: #aaa;
+      color: #fff;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px; }
+    .rightcolumn .card .links {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+      border: 1px solid #aaa;
+      padding: 1rem 0;
+      gap: 10px; }
+      .rightcolumn .card .links .link {
+        width: 100%;
+        padding: .5rem .2rem;
+        background-color: #aaa;
+        color: #fafafa;
+        text-decoration: none;
+        text-transform: capitalize; }
+        .rightcolumn .card .links .link:hover {
+          background-color: #777777; }
 
 .fakeimg {
   background-color: #aaa;
   width: 100%;
   padding: 20px; }
-
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px; }
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.popular1 {
-  float: left;
-  width: 50%;
-  padding: 2px; }
-
-.popular2 {
-  float: right;
-  width: 50%;
-  padding: 2px; }
